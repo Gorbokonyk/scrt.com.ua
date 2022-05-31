@@ -2,7 +2,7 @@
 namespace Opencart\Catalog\Model\Extension\Opencart\Total;
 class Credit extends \Opencart\System\Engine\Model {
 	public function getTotal(array &$totals, array &$taxes, float &$total): void {
-		$this->load->language('extension/opencart/total/credit');
+		$this->load->language('extension/total/credit');
 
 		$balance = $this->customer->getBalance();
 

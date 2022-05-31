@@ -36,8 +36,9 @@
   <div class="container">
     <div class="nav float-start">
       <ul class="list-inline">
-        <li class="list-inline-item">{{ currency }}</li>
-        <li class="list-inline-item">{{ language }}</li>
+{#        <li class="list-inline-item">{{ currency }}</li>#}
+{#        <li class="list-inline-item">{{ search }}</li>#}
+{#        <li class="list-inline-item">{{ language }}</li>#}
       </ul>
     </div>
     <div class="nav float-end">
@@ -63,14 +64,18 @@
         <li class="list-inline-item"><a href="{{ wishlist }}" id="wishlist-total" title="{{ text_wishlist }}"><i class="fas fa-heart"></i> <span class="d-none d-md-inline">{{ text_wishlist }}</span></a></li>
         <li class="list-inline-item"><a href="{{ shopping_cart }}" title="{{ text_shopping_cart }}"><i class="fas fa-shopping-cart"></i> <span class="d-none d-md-inline">{{ text_shopping_cart }}</span></a></li>
         <li class="list-inline-item"><a href="{{ checkout }}" title="{{ text_checkout }}"><i class="fas fa-share"></i> <span class="d-none d-md-inline">{{ text_checkout }}</span></a></li>
-      </ul>
+
+        </ul>
+
     </div>
   </div>
 </nav>
 <header>
   <div class="container">
     <div class="row">
-      <div class="col-md-3 col-lg-4">
+      <div class="col-md-3 col-lg-4 "> {{ language }} </div>
+
+      <div class="col-md-7 col-lg-4" >
         <div id="logo">
           {% if logo %}
             <a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="img-fluid"/></a>
@@ -79,8 +84,7 @@
           {% endif %}
         </div>
       </div>
-      <div class="col-md-5">{{ search }}</div>
-      <div id="header-cart" class="col-md-4 col-lg-3">{{ cart }}</div>
+     <div id="header-cart" class="col-md-2 col-lg-4">{{ search }} </div>
     </div>
   </div>
 </header>

@@ -3,7 +3,7 @@ namespace Opencart\Catalog\Model\Extension\Opencart\Total;
 class Voucher extends \Opencart\System\Engine\Model {
 	public function getTotal(array &$totals, array &$taxes, float &$total): void {
 		if (isset($this->session->data['voucher'])) {
-			$this->load->language('extension/opencart/total/voucher', 'voucher');
+			$this->load->language('extension/total/voucher', 'voucher');
 
 			$this->load->model('checkout/voucher');
 

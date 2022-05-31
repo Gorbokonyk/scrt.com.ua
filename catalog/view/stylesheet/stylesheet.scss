@@ -125,7 +125,7 @@ footer a {
   margin: 0 0 10px 0;
 
   img {
-    max-width: 200px;
+    max-width: 350px;
   }
 }
 
@@ -254,7 +254,7 @@ footer a {
       li {
         a {
           &:hover {
-            color: #ffffff;
+            color: #000000;
             background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
           }
         }
@@ -801,3 +801,4 @@ footer {
   box-shadow: none !important;
   margin-bottom: 50px;
 }
+

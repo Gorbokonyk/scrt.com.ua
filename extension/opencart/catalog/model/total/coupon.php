@@ -3,7 +3,7 @@ namespace Opencart\Catalog\Model\Extension\Opencart\Total;
 class Coupon extends \Opencart\System\Engine\Model {
 	public function getTotal(array &$totals, array &$taxes, float &$total): void {
 		if (isset($this->session->data['coupon'])) {
-			$this->load->language('extension/opencart/total/coupon', 'coupon');
+			$this->load->language('extension/total/coupon', 'coupon');
 
 			$this->load->model('marketing/coupon');
 

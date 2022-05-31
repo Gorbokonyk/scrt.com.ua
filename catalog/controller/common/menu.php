@@ -9,6 +9,8 @@ class Menu extends \Opencart\System\Engine\Controller {
 
 		$this->load->model('catalog/product');
 
+		$data['cart'] = $this->load->controller('common/cart');
+
 		$data['categories'] = [];
 
 		$categories = $this->model_catalog_category->getCategories(0);

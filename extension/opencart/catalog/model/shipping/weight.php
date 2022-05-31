@@ -2,7 +2,7 @@
 namespace Opencart\Catalog\Model\Extension\Opencart\Shipping;
 class Weight extends \Opencart\System\Engine\Model {
 	public function getQuote(array $address): array {
-		$this->load->language('extension/opencart/shipping/weight');
+		$this->load->language('extension/shipping/weight');
 
 		$quote_data = [];
 
